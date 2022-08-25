@@ -452,30 +452,19 @@ acquises avec ce modèle BERT qui fait tant parler de lui.
     \hypertarget{liens-bibliographique}{%
 \subsection{Liens bibliographique}\label{liens-bibliographique}}
 
-    Pour pouvoir mettre au point ce projet et cette analyse on s'est inspiré
-de plusieurs sites. Des sites de présentation globale de l'état de l'art
-du modèle BERT et ainsi des sites et tutoriel permettant de mettre en
-pratique cet outil puissant. Je vous liste ci-dessous les différents
-sites utilisés. 
+   Pour pouvoir mettre au point ce projet et cette analyse on s'est inspiré de plusieurs articles, sites et tutoriels. Je vous liste ci-dessous les différentes références utilisées.
 
 \begin{itemize}
- \item https://en.wikipedia.org/wiki/BERT\_(language\_model)
- \item https://arxiv.org/pdf/1706.03762.pdf
- \item https://www.analyticsvidhya.com/blog/2021/12/text-classification-using-bert-and-tensorflow/
- \item https://datascientest.com/bert-un-outil-de-traitement-du-langage-innovant
- \item https://www.assemblyai.com/blog/pytorch-lightning-for-dummies/ 
- \item https://github.com/pnageshkar/NLP/blob/master/Medium/Multi\_label\_Classification\_BERT\_Lightning.ipynb
- \item https://curiousily.com/posts/multi-label-text-classification-with-bert-and-pytorch-lightning/
- \item https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
- \item https://openclassrooms.com/fr/courses/5801891-initiez-vous-au-deep-learning/5814641-initiez-vous-aux-problematiques-liees-au-traitement-de-sequences
- \item https://blog.ysance.com/lstm-transformers-gpt-bert-guide-des-principales-techniques-en-nlp
- \item https://blog.engineering.publicissapient.fr/2021/03/17/nlp-concepts-cles-et-etat-de-lart/
- \item https://towardsdatascience.com/understanding-encoder-decoder-sequence-to-sequence-model-679e04af4346
- \item https://www.youtube.com/watch?v=QuELiw8tbx8\&list=PL3FW7Lu3i5Jsnh1rnUwq\_TcylNr7EkRe6\&t=1190s
- \item https://inside-machinelearning.com/mecanisme-attention/
- \item https://www.youtube.com/watch?v=TQQlZhbC5ps
- \item https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270
- \item https://www.youtube.com/watch?v=xI0HHN5XKDo
+\item Jacob Devlin Ming-Wei Chang Kenton Lee Kristina Toutanova, 2019, BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding https://arxiv.org/pdf/1810.04805.pdf
+\item Anna Rogers, Olga Kovaleva, Anna Rumshisky, 2020, A Primer in BERTology: What we know about how BERT works https://arxiv.org/pdf/2002.12327v1.pdf
+\item Vaswani et al. Attention is all you need (2017) https://arxiv.org/pdf/1706.03762.pdf
+\item Ajay Halthor, Transformer Neural Networks - EXPLAINED!, 2020, https://www.youtube.com/watch?v=TQQlZhbC5ps
+\item Ajay Halthor, BERT Neural Network - EXPLAINED!, 2020, https://www.youtube.com/watch?v=xI0HHN5XKDo
+\item Chris Manning Richard Socher,  Stanford University School of Engineering, Lecture Collection | Natural Language Processing with Deep Learning (Winter 2017), https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq\_TcylNr7EkRe6
+\item Prasad Nageshkar, Multi-label Text Classification with BERT and PyTorch Lightning, 2021, https://curiousily.com/posts/multi-label-text-classification-with-bert-and-pytorch-lightning/
+\item Michael PhiMichael Phi, Illustrated Guide to LSTM’s and GRU’s: A step by step explanationIllustrated Guide to LSTM’s and GRU’s: A step by step explanation, 2018, https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+\item Christopher Olah, Understanding LSTM NetworksUnderstanding LSTM Networks, 2015, http://colah.github.io/posts/2015-08-Understanding-LSTMs/http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+\item (Martin et al., 2019) Martin, L., Muller, B., Suárez, P.J.O., Dupont, Y., Romary, L., de La Clergerie, É.V., Seddah, D. and Sagot, B., 2019. Camembert: a tasty french language model. arXiv preprint arXiv:1911.03894.(Martin et al., 2019) Martin, L., Muller, B., Suárez, P.J.O., Dupont, Y., Romary, L., de La Clergerie, É.V., Seddah, D. and Sagot, B., 2019. Camembert: a tasty french language model. arXiv preprint arXiv:1911.03894.
 \end{itemize}
 
     \hypertarget{embeddings}{%
@@ -798,7 +787,7 @@ Sur ce schéma, on peut voir les liens qui unissent les mots de la phrase
 « L'animal n'a pas traversé la rue car il était trop épuisé » (en
 anglais) après avoir utilisé le mécanisme de l'Attention. En se
 focalisant sur le mot « animal », on peut voir qu'il est directement
-relié à « était » et « épuisé ». Uci, l'Attention nous prouve que même
+relié à « était » et « épuisé ». Ici, l'Attention nous prouve que même
 si les mots sont très éloignés dans la phrase, le modèle arrive
 comprendre leurs relations. C'est tout l'avantage du mécanisme de
 l'Attention. Lors de l'entraînement des réseaux de neurones, le modèle
